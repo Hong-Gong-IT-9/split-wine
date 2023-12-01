@@ -19,7 +19,7 @@ describe('UsersController', () => {
     it('should return stored users', () => {
       expect(usersController.getUsers()).toContainEqual<User>({
         id: 1,
-        username: 'alan.kan',
+        username: 'jo.law',
         password: 'whiskeyplz',
         displayName: 'Alan',
       });
