@@ -7,29 +7,24 @@ import { AppModule } from './../src/app.module';
 describe('Users', () => {
   let app: INestApplication;
 
-  beforeAll(
-    async () => {
-      const moduleFixture: TestingModule = await Test.createTestingModule({
-        imports: [AppModule],
-      }).compile();
+  beforeAll(async () => {
+    const moduleFixture: TestingModule = await Test.createTestingModule({
+      imports: [AppModule],
+    }).compile();
 
-      app = moduleFixture.createNestApplication();
-      await app.init();
-    }, 10 * 60_000
-  );
+    app = moduleFixture.createNestApplication();
+    await app.init();
+  }, 10 * 60_000);
 
   afterAll(async () => {
     await app.close();
   });
 
-  it('Can register a user' , ()=> {
+  it('Can register a user', () => {
     // TODO
-  })
+  });
 
   it('Can get new registered user)', () => {
-      return request(app.getHttpServer())
-        .get('/users')
-        .expect(200)
-        .expect([]); // TODO
+    return request(app.getHttpServer()).get('/users').expect(200).expect([]); // TODO
   });
 });
