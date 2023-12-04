@@ -1,16 +1,17 @@
 import { Module } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { UsersController } from './users.controller';
+import { DatabaseModule } from '../db/db.module';
 
 export interface User {
   id: number | undefined;
-  username: string;
+  name: string;
+  email: string;
   password: string;
-  displayName: string;
 }
 
 @Module({
-  imports: [],
+  imports: [DatabaseModule],
   controllers: [UsersController],
   providers: [UsersService],
 })
