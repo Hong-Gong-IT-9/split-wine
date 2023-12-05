@@ -19,7 +19,7 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:infra:up": "docker-compose up -d",
     "test:infra:down": "docker-compose down",
-    "test:e2e": "yarn test:infra:up && yarn prisma:migrate && jest -i --config ./test/jest-e2e.json",
+    "test:e2e": "yarn test:infra:up && sleep 5 && yarn prisma:migrate && jest -i --config ./test/jest-e2e.json",
     "prisma:migrate": "prisma migrate deploy",
     "prisma:generate": "prisma generate"
   },
