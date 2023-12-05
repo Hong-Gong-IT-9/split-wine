@@ -801,19 +801,19 @@
 
 "@prisma/client@^5.6.0":
   version "5.6.0"
-  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-5.6.0.tgz#1c15932250d5658fe0127e62faf4ecd96a877259"
+  resolved "https://registry.npmjs.org/@prisma/client/-/client-5.6.0.tgz"
   integrity sha512-mUDefQFa1wWqk4+JhKPYq8BdVoFk9NFMBXUI8jAkBfQTtgx8WPx02U2HB/XbAz3GSUJpeJOKJQtNvaAIDs6sug==
   dependencies:
     "@prisma/engines-version" "5.6.0-32.e95e739751f42d8ca026f6b910f5a2dc5adeaeee"
 
 "@prisma/engines-version@5.6.0-32.e95e739751f42d8ca026f6b910f5a2dc5adeaeee":
   version "5.6.0-32.e95e739751f42d8ca026f6b910f5a2dc5adeaeee"
-  resolved "https://registry.yarnpkg.com/@prisma/engines-version/-/engines-version-5.6.0-32.e95e739751f42d8ca026f6b910f5a2dc5adeaeee.tgz#57b003ab5e1ea1523b5cdd7f06b24ebcf5c7fd8c"
+  resolved "https://registry.npmjs.org/@prisma/engines-version/-/engines-version-5.6.0-32.e95e739751f42d8ca026f6b910f5a2dc5adeaeee.tgz"
   integrity sha512-UoFgbV1awGL/3wXuUK3GDaX2SolqczeeJ5b4FVec9tzeGbSWJboPSbT0psSrmgYAKiKnkOPFSLlH6+b+IyOwAw==
 
 "@prisma/engines@5.6.0":
   version "5.6.0"
-  resolved "https://registry.yarnpkg.com/@prisma/engines/-/engines-5.6.0.tgz#82c445aa10633bbc0388aa2d6e411a0bd94c9439"
+  resolved "https://registry.npmjs.org/@prisma/engines/-/engines-5.6.0.tgz"
   integrity sha512-Mt2q+GNJpU2vFn6kif24oRSBQv1KOkYaterQsi0k2/lA+dLvhRX6Lm26gon6PYHwUM8/h8KRgXIUMU0PCLB6bw==
 
 "@sinclair/typebox@^0.27.8":
@@ -3263,7 +3263,7 @@ jest-message-util@^29.7.0:
 
 jest-mock-extended@^3.0.5:
   version "3.0.5"
-  resolved "https://registry.yarnpkg.com/jest-mock-extended/-/jest-mock-extended-3.0.5.tgz#ebf208e363f4f1db603b81fb005c4055b7c1c8b7"
+  resolved "https://registry.npmjs.org/jest-mock-extended/-/jest-mock-extended-3.0.5.tgz"
   integrity sha512-/eHdaNPUAXe7f65gHH5urc8SbRVWjYxBqmCgax2uqOBJy8UUcCBMN1upj1eZ8y/i+IqpyEm4Kq0VKss/GCCTdw==
   dependencies:
     ts-essentials "^7.0.3"
@@ -4106,7 +4106,7 @@ pretty-format@^29.0.0, pretty-format@^29.7.0:
 
 prisma@^5.6.0:
   version "5.6.0"
-  resolved "https://registry.yarnpkg.com/prisma/-/prisma-5.6.0.tgz#ae2c27fdfb4d53be7f7dafb50d6b8b7f55c93aa5"
+  resolved "https://registry.npmjs.org/prisma/-/prisma-5.6.0.tgz"
   integrity sha512-EEaccku4ZGshdr2cthYHhf7iyvCcXqwJDvnoQRAJg5ge2Tzpv0e2BaMCp+CbbDUwoVTzwgOap9Zp+d4jFa2O9A==
   dependencies:
     "@prisma/engines" "5.6.0"
@@ -4769,7 +4769,7 @@ ts-api-utils@^1.0.1:
 
 ts-essentials@^7.0.3:
   version "7.0.3"
-  resolved "https://registry.yarnpkg.com/ts-essentials/-/ts-essentials-7.0.3.tgz#686fd155a02133eedcc5362dc8b5056cde3e5a38"
+  resolved "https://registry.npmjs.org/ts-essentials/-/ts-essentials-7.0.3.tgz"
   integrity sha512-8+gr5+lqO3G84KdiTSMRLtuyJ+nTBVRKuCrK4lidMPdVeEp0uqC875uE5NMcaA7YYMN7XsNiFQuMvasF8HT/xQ==
 
 ts-jest@^29.1.0:
