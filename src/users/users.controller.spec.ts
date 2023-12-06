@@ -1,28 +1,24 @@
-import { Test, TestingModule } from '@nestjs/testing';
 import { UsersController } from './users.controller';
 import { UsersService } from './users.service';
 import { User } from './users.module';
+import { mock } from 'jest-mock-extended';
 
 describe('UsersController', () => {
-  let usersController: UsersController;
+  const mockService = mock<UsersService>();
+  const controller: UsersController = new UsersController(mockService);
 
-  beforeEach(async () => {
-    const app: TestingModule = await Test.createTestingModule({
-      controllers: [UsersController],
-      providers: [UsersService],
-    }).compile();
-
-    usersController = app.get<UsersController>(UsersController);
-  });
-
-  describe('root', () => {
-    it('should return stored users', () => {
-      expect(usersController.getUsers()).toContainEqual<User>({
+  describe('getUsers', () => {
+    it('should return exactly service returns', async () => {
+      const givenUser = {
         id: 1,
-        username: 'alan.kan',
+        email: 'alan.kan@gmail.com',
         password: 'whiskeyplz',
-        displayName: 'Alan',
-      });
+        name: 'Alan',
+      };
+      mockService.getUsers.mockResolvedValue([givenUser]);
+      const result = await controller.getUsers();
+      expect(result.length).toEqual(1);
+      expect(result).toContainEqual<User>(givenUser);
     });
   });
 });
