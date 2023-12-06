@@ -25,6 +25,13 @@ describe('Users', () => {
   });
 
   it('Can get new registered user)', () => {
-    return request(app.getHttpServer()).get('/users').expect(200).expect([]); // TODO
+    return request(app.getHttpServer()).get('/users').expect(200).expect([
+      {
+        id: 1,
+        name: 'alan',
+        email : 'alan@foo.com',
+        password: 'abc123'
+      }
+    ]); // TODO
   });
 });
