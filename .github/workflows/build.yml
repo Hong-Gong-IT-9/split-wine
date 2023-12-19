@@ -17,7 +17,7 @@ jobs:
       with:
         node-version-file: backend/.nvmrc
         cache: 'npm'
-        cache-dependency-path: backend/package-lock.json
+        cache-dependency-path: backend/yarn.lock
     - run: npm install
     - run: yarn
     - run: yarn lint
@@ -32,7 +32,7 @@ jobs:
       with:
         node-version-file: backend/.nvmrc
         cache: 'npm'
-        cache-dependency-path: backend/package-lock.json
+        cache-dependency-path: backend/yarn.lock
     - run: npm install
     - run: yarn
     - run: yarn lint
@@ -52,7 +52,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-          cache-dependency-path: frontend/package-lock.json
+          cache-dependency-path: frontend/yarn.lock
       - run: yarn
       - run: yarn lint
       - run: yarn run test
