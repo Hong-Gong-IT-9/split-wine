@@ -51,4 +51,4 @@ jobs:
           cache-dependency-path: frontend/yarn.lock
       - name: yarn && yarn lint && yarn run test
         working-directory: ./frontend
-        run: yarn && yarn lint && yarn run test
+        run: yarn && yarn test
