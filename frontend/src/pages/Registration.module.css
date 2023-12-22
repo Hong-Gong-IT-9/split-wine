@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.registration-form {
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.5); /* Teal color with 50% opacity */
+    border: 1px solid #E2E2E2; /* Border for the rectangle */
+    border-radius: 8px; /* Border radius for rounded corners */
+}
+
+.form-container{
+    padding: 50px;
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+}

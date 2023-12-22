@@ -4,7 +4,6 @@ import App from './App';
 
 test('renders Split wine App', () => {
   render(<App />);
-  const linkElement = screen.getByText(/Split Wine/i);
-  screen.logTestingPlaygroundURL();
+  const linkElement = screen.getByText(/Login/i);
   expect(linkElement).toBeVisible();
 });
