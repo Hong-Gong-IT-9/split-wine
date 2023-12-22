@@ -25,13 +25,6 @@ const Registration = () => {
     };
 
     return <div className={style['container']}>
-        {step === 0 && <Button variant="contained" onClick={() => setStep(1)} style={{
-            textTransform: 'none',
-            color: '#E85757',
-            backgroundColor: '#FFFFFF',
-            fontWeight: 'bolder'
-        }}>Sign Up</Button>}
-        {(step === 1) &&
             <div className={style['registration-form']}>
                 <div className={style['form-container']}>
                     <Typography variant="h5" style={{color: '#E85757', fontWeight: 'bolder'}}>User
@@ -76,8 +69,6 @@ const Registration = () => {
                     </form>
                 </div>
             </div>
-
-        }
     </div>
 }
 
