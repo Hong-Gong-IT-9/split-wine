@@ -9,5 +9,6 @@
 
 .button-group{
     display: flex;
-    gap: 1.5vh;
+    justify-content: space-between;
+    gap: 2.5vh;
 }
