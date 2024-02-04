@@ -18,13 +18,13 @@ const AppHeader = () => {
                 navigate('/dashboard')
             }} style={{textTransform: 'none', color: '#E85757'}}>Dashboard</Button>
             <Button onClick={()=> {
-                navigate('/event')
+                navigate('/events')
             }} style={{textTransform: 'none', color: '#E85757'}}>My Events</Button>
             <Button onClick={()=> {
-                navigate('/wine')
+                navigate('/wines')
             }} style={{textTransform: 'none', color: '#E85757'}}>My Wines</Button>
             <Button onClick={()=> {
-                navigate('/friend')
+                navigate('/friends')
             }} style={{textTransform: 'none', color: '#E85757'}}>Frient List</Button>
             <Button
                 onClick={()=> {
