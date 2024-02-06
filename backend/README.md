@@ -27,7 +27,7 @@ $ yarn run start:dev
 # or, production mode
 $ yarn run start:prod
 
-# tear down db
+# after manual/dev testing, remember to tear down the db
 $ yarn run test:infra:down 
 ```
 
