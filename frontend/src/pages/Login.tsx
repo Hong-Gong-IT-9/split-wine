@@ -26,7 +26,7 @@ const Login = () => {
       <p>login page</p>
       <p>For demo purpose only below:</p>
       <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
-        <InputLabel id="demo-simple-select-label">Age</InputLabel>
+        <InputLabel id="demo-simple-select-label">User</InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
@@ -41,6 +41,7 @@ const Login = () => {
           ))}
         </Select>
       </FormControl>
+      <p>Selected user ID: {userId}</p>
     </div>
   );
 };
