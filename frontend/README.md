@@ -1,3 +1,12 @@
+# split-wine-ui
+
+## pre-requisites
+- nvm
+- npm and yarn
+- docker: for running openapi code generation for HTTP client to the backend
+
+
+# TODO: let's review if the below commands are still relevant :) 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
