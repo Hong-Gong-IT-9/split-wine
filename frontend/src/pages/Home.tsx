@@ -2,7 +2,7 @@ import {Button} from "@mui/material";
 import {useNavigate} from "react-router-dom";
 import style from './Landing.module.css'
 
-const Landing = () => {
+const Home = () => {
     const navigate = useNavigate();
 
     return <div className={style['signup-btn']}>
@@ -20,4 +20,4 @@ const Landing = () => {
 
 }
 
-export default Landing;
+export default Home;
