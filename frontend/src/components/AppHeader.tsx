@@ -8,11 +8,15 @@ const AppHeader = () => {
 
     const navigate = useNavigate();
 
-    const [login, isLogin] = React.useState(true)
+    const [login, setLogin] = React.useState(false)
 
     return login ? (
         <div className={style['container']}>
         <img src={logo} alt="wine-logo"/>
+        <Button onClick={()=> {
+                setLogin(preLogin => !preLogin)
+            }} style={{textTransform: 'none', color: '#E85757'}}>Toggle</Button>
+        
         <div className={style['button-group']}>
             <Button onClick={()=> {
                 navigate('/dashboard')
@@ -36,6 +40,10 @@ const AppHeader = () => {
     ) : (
         <div className={style['container']}>
         <img src={logo} alt="wine-logo"/>
+        <Button onClick={()=> {
+                setLogin(preLogin => !preLogin)
+            }} style={{textTransform: 'none', color: '#E85757'}}>Toggle</Button>
+
         <div className={style['button-group']}>
             <Button onClick={()=> {
                 navigate('/login')
