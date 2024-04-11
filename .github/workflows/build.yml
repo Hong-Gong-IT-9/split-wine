@@ -44,6 +44,9 @@ jobs:
           node-version-file: frontend/.nvmrc
           cache: 'npm'
           cache-dependency-path: frontend/yarn.lock
+      - name: openapi http client codegen
+        working-directory: ./frontend
+        run: yarn openapi-codegen
       - name: yarn && yarn lint && yarn run test
         working-directory: ./frontend
         run: yarn && yarn test
